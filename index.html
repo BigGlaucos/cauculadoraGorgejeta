@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+
+      <div class="content">
+        <div class="contentLeft">
+          <div>
+            <p>Bill</p>
+            <label for="bill" class="number">
+              <input
+                class="input"
+                id="bill"
+                type="number"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div>
+            <p>Select Tip %</p>
+            <section id="selectTip">
+              <button class="porcent" value="5">5%</button>
+              <button class="porcent btnActive" value="10">10%</button>
+              <button class="porcent" value="15">15%</button>
+              <button class="porcent" value="25">25%</button>
+              <button class="porcent" value="50">50%</button>
+              <input
+                class="input"
+                id="inputCustom"
+                type="number"
+                placeholder="Custom"
+                autocomplete="off"
+              />
+            </section>
+          </div>
+
+          <section id="numberOfPeople">
+            <p>Number of People <span id="txtAlertZero">Can't be zero</span></p>
+            <label for="number" class="number">
+              <input
+                class="input"
+                id="number"
+                type="number"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </label>
+          </section>
+        </div>
+
+        <div class="contentRight">
+          <div>
+            <div>
+              <p>
+                Tip Amount<br />
+                <span>/ person</span>
+              </p>
+              <input
+                id="tipAmountPerson"
+                type="text"
+                placeholder="Tip Amount"
+                readonly
+              />
+            </div>
+
+            <div>
+              <p>
+                Total<br />
+                <span>/ person</span>
+              </p>
+              <input
+                id="totalPerson"
+                type="text"
+                placeholder="Total"
+                readonly
+              />
+            </div>
+          </div>
+
+          <button id="btnReset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
